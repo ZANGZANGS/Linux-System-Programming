@@ -11,7 +11,6 @@ extern int errno;
 int main(int argc, char *argv[]) {
     FILE *src, *dest;
     char buf[BUFSIZ];
-    mode_t mode;
     ssize_t ret;
 
     if(argc != 3){
