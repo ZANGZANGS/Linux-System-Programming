@@ -36,4 +36,9 @@ int main(int argc, char *argv[]) {
         
 	fputs(buf, dest);
     }
+
+    fclose(srd);
+    fclose(dest);
+
+	    
 }

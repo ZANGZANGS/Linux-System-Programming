@@ -29,4 +29,6 @@ int main(int argc, char *argv[]) {
     while( (fgets (buf, BUFSIZ , src)) != NULL){    
 	    printf("%d %s",line++, buf);
     }
+
+    fclose(src);
 }
