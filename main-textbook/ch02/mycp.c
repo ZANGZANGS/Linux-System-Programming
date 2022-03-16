@@ -36,7 +36,7 @@ int main(int argc, char *argv[]) {
 
     len = 255;
 
-    while(len != 0  && (ret = read (fd_src, buf, len)) != 0){
+    while((ret = read (fd_src, buf, len)) != 0){
         if(ret == -1){
 	    if (errno == EINTR) continue;
 	    perror("read");
